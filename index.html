@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Масажи Бойчев</title>
-
+    
     <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
@@ -136,6 +136,38 @@
     font-weight: bold; /* Удебелен шрифт */
     font-size: 1.4rem; /* Увеличаване на размера на шрифта (по желание) */
     color: #2c3e50;
+}
+        .container {
+    max-width: 1200px; /* Максимална ширина за по-големи екрани */
+    margin: 0 auto; /* Центриране на контейнера */
+    padding: 0 15px; /* Padding за по-малки екрани */
+}
+
+/* Респонсив стилове */
+@media (max-width: 768px) {
+    .pricing__row {
+        flex-direction: column; /* Промяна на подреждането на колоните */
+    }
+
+    .pricing__column {
+        width: 100%; /* Пълна ширина на колоните на по-малки екрани */
+        margin-bottom: 20px; /* Разстояние между колоните */
+    }
+
+    .banner__offer-text {
+        text-align: center; /* Центриране на текста на банера */
+    }
+}
+
+/* Допълнителни стилове за мобилни устройства */
+@media (max-width: 576px) {
+    .title {
+        font-size: 24px; /* Намаляване на размера на заглавията */
+    }
+
+    .offer-phone {
+        font-size: 1rem; /* Намаляване на размера на номера */
+    }
 }
     </style>
 </head>
