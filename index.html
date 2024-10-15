@@ -143,30 +143,38 @@
     padding: 0 15px; /* Padding за по-малки екрани */
 }
 
-/* Респонсив стилове */
 @media (max-width: 768px) {
-    .pricing__row {
-        flex-direction: column; /* Промяна на подреждането на колоните */
+    .banner__title {
+        font-size: 24px; /* Увеличаване на размера на заглавието */
+        text-align: center; /* Центрирано заглавие */
     }
 
-    .pricing__column {
-        width: 100%; /* Пълна ширина на колоните на по-малки екрани */
-        margin-bottom: 20px; /* Разстояние между колоните */
+    .company-services {
+        display: flex; /* Използване на Flexbox за подреждане */
+        flex-wrap: wrap; /* Позволява елементите да се пренасят на нов ред */
+        justify-content: center; /* Центрира елементите */
+        margin-top: 10px; /* Отстояние над списъка */
+    }
+
+    .company-services__item {
+        flex: 1 1 45%; /* Две по две в ред */
+        margin: 5px; /* Отстояние между елементите */
+        background-color: rgba(245, 245, 245, 0.9); /* Мръсно бял фон */
+        padding: 15px; /* Отстояние в клетката */
+        border: 1px solid #ddd; /* Лека граница */
+        border-radius: 5px; /* Закръглени ъгли */
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Сянка */
+        text-align: center; /* Центриран текст */
     }
 
     .banner__offer-text {
-        text-align: center; /* Центриране на текста на банера */
-    }
-}
-
-/* Допълнителни стилове за мобилни устройства */
-@media (max-width: 576px) {
-    .title {
-        font-size: 24px; /* Намаляване на размера на заглавията */
+        text-align: center; /* Центрирано заглавие */
+        font-size: 16px; /* Увеличаване на размера на текста */
     }
 
     .offer-phone {
-        font-size: 1rem; /* Намаляване на размера на номера */
+        font-weight: bold; /* Удебеляване на номера */
+        color: #007bff; /* Професионален син цвят */
     }
 }
     </style>
