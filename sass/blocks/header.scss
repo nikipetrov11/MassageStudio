@@ -1,0 +1,39 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center; /* За центриране на елементите по вертикала */
+  max-width: 1360px;
+  padding-top: 10px;
+  margin-bottom: 34px;
+
+  @media (min-width: 992px) {
+    padding-top: 20px;
+    margin-bottom: 50px;
+  }
+}
+
+.header__left {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-right: 8px;
+
+  @media (min-width: 992px) {
+    justify-content: flex-start;
+  }
+}
+
+
+
+.header__card--city {
+  background-color: white;
+  border-radius: 20px;
+  padding: 12px 25px;
+  font-size: 14px;
+  box-shadow: 0 3px 21px rgba(0, 0, 0, 0.09);
+}
+
+.header__card--city strong {
+  color: #333;
+  font-weight: 700;
+}
