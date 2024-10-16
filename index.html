@@ -12,6 +12,21 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css">
     
     <style>
+        @media (max-width: 576px) {
+    .company-services {
+        display: flex;                     /* Използваме Flexbox */
+        flex-direction: column;            /* Подреждаме елементите по колони */
+        align-items: center;               /* Центрираме елементите хоризонтално */
+        padding: 0;                        /* Няма допълнително отстояние */
+    }
+
+    .company-services__item {
+        width: 100%;                       /* Пълен размер на ширината за всеки елемент */
+        max-width: 300px;                 /* Максимална ширина, ако е необходимо */
+        margin: 10px 0;                   /* Отстояние между елементите */
+        text-align: center;                /* Центрираме текста */
+    }
+}
   @media (max-width: 576px) {
     .header__logo {
         display: flex;               /* Използваме Flexbox за центриране */
