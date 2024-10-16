@@ -13,13 +13,29 @@
     
     <style>
         .about {
-    background-color: #f8f9fa; /* Светло сив фон (можете да промените цвета, ако желаете) */
+    background-image: url('img/pricing-bcgr.png'); /* Задаване на фоново изображение */
+    background-size: cover; /* Покрива целия контейнер */
+    background-position: center; /* Центрира изображението */
+    padding: 40px 20px; /* Отстояние около секцията */
+}
+
+.about__container {
+    max-width: 800px; /* Максимална ширина на контейнера */
+    margin: 0 auto; /* Центрира контейнера */
+    text-align: center; /* Центриране на текста */
+}
+
+.title--about {
+    font-size: 2rem; /* Размер на заглавието */
+    color: #fff; /* Цвета на заглавието */
+    margin-bottom: 20px; /* Разстояние под заглавието */
 }
 
 .about__text {
     font-size: 1.2rem; /* Размер на текста */
     line-height: 1.5; /* Разстояние между редовете */
-    color: #333; /* Цвета на текста */
+    color: #fff; /* Цвета на текста (бял) */
+    padding: 20px; /* Отстояние около текста */
 }
         @media (max-width: 576px) {
     .company-services {
@@ -248,7 +264,7 @@
                     <div class="pricing__column">
                         <div class="pricing__content">
                             <h3 class="pricing__title">Спортен <br>60 мин.</h3>
-                            <li class="unordered-list__item unordered-list__item--pricing">1 масаж - <strong>50 лв.</strong></li>
+                            <li class="unordered-list__item unordered-list__item--pricing">1 масаж - <strong>55 лв.</strong></li>
                             <h4 class="pricing__subscription-title">Цена за пакет:</h4>
                             <ul class="unordered-list unordered-list--pricing">
                                 <li class="unordered-list__item unordered-list__item--pricing">2 масажа - <strong>100 лв.</strong></li>
@@ -264,7 +280,7 @@
                     <div class="pricing__column">
                         <div class="pricing__content">
                             <h3 class="pricing__title">Лечебен <br>60 мин.</h3>
-                            <li class="unordered-list__item unordered-list__item--pricing">1 масаж - <strong>50 лв.</strong></li>
+                            <li class="unordered-list__item unordered-list__item--pricing">1 масаж - <strong>55 лв.</strong></li>
                             <h4 class="pricing__subscription-title">Цена за пакет:</h4>
                             <ul class="unordered-list unordered-list--pricing">
                                 <li class="unordered-list__item unordered-list__item--pricing">2 масажа - <strong>100 лв.</strong></li>
