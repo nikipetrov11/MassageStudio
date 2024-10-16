@@ -12,7 +12,22 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <style>
-   /* Стилове за мобилна версия (до 768px ширина) */
+@media (max-width: 768px) {
+    .header__logo img {
+        display: none; /* Скриване на оригиналното лого */
+    }
+
+    .header__logo-mobile {
+        display: block; /* Показване на мобилното лого */
+        margin: 0 auto; /* Центриране на логото */
+        max-width: 150px; /* Регулиране на размера на мобилното лого */
+    }
+}
+
+/* По подразбиране скриваме мобилното лого на десктоп */
+.header__logo-mobile {
+    display: none;
+}
 /* Стилове за мобилна версия (до 768px ширина) */
 @media (max-width: 768px) {
 
