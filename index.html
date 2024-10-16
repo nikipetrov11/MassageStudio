@@ -142,6 +142,33 @@
     margin: 0 auto; /* Центриране на контейнера */
     padding: 0 15px; /* Padding за по-малки екрани */
 }
+/* Основен CSS за десктоп */
+.company-services__item {
+    width: calc(50% - 10px);
+    background: rgba(211, 211, 211, 0.9);
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Стилове за мобилна версия */
+@media (max-width: 768px) {
+    .company-services {
+        flex-direction: column; /* Подреждане на елементите в колона */
+    }
+
+    .company-services__item {
+        width: 100%; /* Всеки елемент заема 100% от ширината */
+        text-align: left; /* Подравняване на текста вляво */
+        padding-left: 20px; /* Добавяне на отстояние отляво */
+    }
+
+    .banner__title {
+        text-align: left; /* Подравняване на заглавието вляво */
+        padding-left: 20px; /* Добавяне на отстояние отляво за заглавието */
+    }
+}
 
 
     </style>
