@@ -13,16 +13,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <style>
    /* Стилове за мобилна версия (до 768px ширина) */
+/* Стилове за мобилна версия (до 768px ширина) */
 @media (max-width: 768px) {
 
     .banner__wrapper {
         text-align: center; /* Центрира съдържанието */
-        padding: 20px; /* Добавя малко padding за по-добър изглед */
+        padding: 20px; /* Padding за цялата секция */
     }
 
     .banner__title {
-        font-size: 1.8rem; /* По-малък размер на заглавието за мобилни устройства */
-        margin: 20px 0; /* Добавя разстояние от горната и долната част */
+        font-size: 2.4rem; /* Увеличава размера на заглавието */
+        margin: 20px 0; /* Разстояние над и под заглавието */
     }
 
     .company-services {
@@ -30,18 +31,22 @@
         display: flex;
         flex-direction: column;
         align-items: center; /* Центрира услугите */
+        width: 95%; /* Почти до края на екрана */
+        margin: 0 auto; /* Центрира списъка */
     }
 
     .company-services__item {
-        width: 90%; /* Увеличава ширината за мобилни устройства */
-        margin-bottom: 10px; /* Добавя разстояние между елементите */
-        text-align: left; /* Центрира текста в ляво */
+        width: 100%; /* Услугите ще заемат почти цялата ширина на екрана */
+        margin-bottom: 10px; /* Разстояние между елементите */
+        text-align: left; /* Подравнява текста в ляво */
+        padding-left: 10px; /* Добавя малко разстояние отляво на текста */
     }
 
     .banner__offer-text {
-        font-size: 1.2rem; /* По-малък шрифт на текста за мобилни */
-        margin-top: 20px; /* Добавя малко разстояние над текста */
+        font-size: 1.4rem; /* Увеличен шрифт за текста с оферта */
+        margin-top: 20px; /* Разстояние над текста */
     }
+}
 }
        @media (max-width: 768px) {
         .header__logo {
