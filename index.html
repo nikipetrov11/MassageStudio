@@ -12,7 +12,11 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css">
     
     <style>
-   
+   @media (max-width: 576px) {
+    .header__logo img {
+        content: url('img/mobile-logo.png');
+        width: 100px; /* Можете да зададете различна ширина за мобилни устройства */
+    }
         /* Вътрешен CSS за новите класове */
         .gallery-item img {
             width: 100%;
