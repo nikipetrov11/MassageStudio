@@ -12,10 +12,16 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css">
     
     <style>
-   @media (max-width: 576px) {
+  @media (max-width: 576px) {
+    .header__logo {
+        display: flex;
+        justify-content: center; /* Центриране на логото хоризонтално */
+        margin: 0 auto; /* Премахване на отстоянията и центриране */
+    }
+    
     .header__logo img {
         content: url('img/mobile-logo.png'); /* Изображение за мобилната версия */
-        width: 35px; /* Още по-малко лого на мобилни устройства */
+        width: 60px; /* Още по-малко лого на мобилни устройства */
         height: auto; /* Запазване на пропорциите */
     }
 }
