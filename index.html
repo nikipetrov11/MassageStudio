@@ -12,7 +12,37 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <style>
-   
+   /* Стилове за мобилна версия (до 768px ширина) */
+@media (max-width: 768px) {
+
+    .banner__wrapper {
+        text-align: center; /* Центрира съдържанието */
+        padding: 20px; /* Добавя малко padding за по-добър изглед */
+    }
+
+    .banner__title {
+        font-size: 1.8rem; /* По-малък размер на заглавието за мобилни устройства */
+        margin: 20px 0; /* Добавя разстояние от горната и долната част */
+    }
+
+    .company-services {
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center; /* Центрира услугите */
+    }
+
+    .company-services__item {
+        width: 90%; /* Увеличава ширината за мобилни устройства */
+        margin-bottom: 10px; /* Добавя разстояние между елементите */
+        text-align: left; /* Центрира текста в ляво */
+    }
+
+    .banner__offer-text {
+        font-size: 1.2rem; /* По-малък шрифт на текста за мобилни */
+        margin-top: 20px; /* Добавя малко разстояние над текста */
+    }
+}
        @media (max-width: 768px) {
         .header__logo {
             display: none !important; /* Скрива логото на мобилни устройства */
