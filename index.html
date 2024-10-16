@@ -197,7 +197,8 @@
 
 <body>
 
-    <section class="banner" id="banner" style="background-image: url('img/back.jpg'); background-size: cover; background-position: center; padding: 60px 0;">
+    <!-- Секция за мобилни устройства -->
+<section class="banner d-md-none" id="banner-mobile" style="background-image: url('img/back.jpg'); background-size: cover; background-position: center; padding: 60px 0;">
     <header class="header text-center mb-4">
         <div class="header__logo">
             <a href="#">
@@ -233,6 +234,33 @@
                     </div>
                 </div>
             </div>
+        </div>
+    </div>
+</section>
+
+<!-- Секция за десктоп устройства -->
+<section class="banner d-none d-md-block" id="banner-desktop">
+    <header class="header">
+        <div class="header__left">
+            <a href="#" class="header__logo">
+                <img src="img/logo.png" alt="Лого">
+            </a>
+        </div>
+    </header>
+    <div class="banner__container">
+        <div class="banner__wrapper">
+            <div class="banner__titles text-left mb-4">
+                <h1 class="banner__title">-Видове масажи-</h1>
+            </div>
+            <ul class="company-services">
+                <li class="company-services__item">Класически масаж</li>
+                <li class="company-services__item">Релаксиращ масаж</li>
+                <li class="company-services__item">Спортен масаж</li>
+                <li class="company-services__item">Лечебен масаж</li>
+                <li class="company-services__item">Частичен масаж</li>
+                <li class="company-services__item">Антицелулитен масаж</li>
+            </ul>
+            <p class="banner__offer-text">Обадете се за безплатна консултация <strong>0879973347</strong></p>
         </div>
     </div>
 </section>
