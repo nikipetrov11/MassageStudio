@@ -5,65 +5,13 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Масажи Бойчев</title>
-    
+
     <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
     <style>
-@media (max-width: 768px) {
-    .header__logo img {
-        display: none; /* Скриване на оригиналното лого */
-    }
-
-    .header__logo-mobile {
-        display: block; /* Показване на мобилното лого */
-        margin: 0 auto; /* Центриране на логото */
-        max-width: 150px; /* Регулиране на размера на мобилното лого */
-    }
-}
-
-/* По подразбиране скриваме мобилното лого на десктоп */
-.header__logo-mobile {
-    display: none;
-}
-/* Стилове за мобилна версия (до 768px ширина) */
-@media (max-width: 768px) {
-
-    .banner__wrapper {
-        text-align: center; /* Центрира съдържанието */
-        padding: 20px; /* Padding за цялата секция */
-    }
-
-    .banner__title {
-        font-size: 2.4rem; /* Увеличава размера на заглавието */
-        margin: 20px 0; /* Разстояние над и под заглавието */
-    }
-
-    .company-services {
-        padding: 0;
-        display: flex;
-        flex-direction: column;
-        align-items: center; /* Центрира услугите */
-        width: 95%; /* Почти до края на екрана */
-        margin: 0 auto; /* Центрира списъка */
-    }
-
-    .company-services__item {
-        width: 100%; /* Услугите ще заемат почти цялата ширина на екрана */
-        margin-bottom: 10px; /* Разстояние между елементите */
-        text-align: left; /* Подравнява текста в ляво */
-        padding-left: 10px; /* Добавя малко разстояние отляво на текста */
-    }
-
-    .banner__offer-text {
-        font-size: 1.4rem; /* Увеличен шрифт за текста с оферта */
-        margin-top: 20px; /* Разстояние над текста */
-    }
-}
-}
-       
    
         /* Вътрешен CSS за новите класове */
         .gallery-item img {
@@ -80,27 +28,35 @@
         .contacts__block {
             margin: 0 10px; /* Разстояние между блоковете за контакт */
         }
-       /* .header__logo {
+        .header__logo {
     display: inline-block;
     max-width: 200px; /* Задаваме максимална ширина на логото */
     margin-top: -20px; /* Премества логото нагоре */
   }
 
-  /*.header__logo img {
+  .header__logo img {
     display: block;
     width: 200%; /* Увеличаваме размера на логото */
     height: auto; /* Съхранява пропорциите на изображението */
   }
 
-  
-  /*.header__logo {
+  @media (max-width: 576px) {
+    .header__logo {
+      max-width: 150px; /* По-малък размер за мобилни устройства */
+    }
+
+    .header__logo img {
+      width: 150%;
+    }
+  }
+  .header__logo {
     display: inline-block;
     max-width: 400px; /* Увеличаваме максималната ширина на логото */
     margin-left: auto; /* Преместваме логото надясно */
     margin-right: 5px; /* Разстояние между логото и другите елементи */
 }
 
-/*.header__logo {
+.header__logo {
     display: inline-block;
     max-width: 400px; /* Увеличаваме максималната ширина на логото */
     margin-left: 80px; /* Увеличаваме отстъпа отляво, за да преместим логото надясно */
@@ -181,32 +137,6 @@
     font-size: 1.4rem; /* Увеличаване на размера на шрифта (по желание) */
     color: #2c3e50;
 }
-        .container {
-    max-width: 1200px; /* Максимална ширина за по-големи екрани */
-    margin: 0 auto; /* Центриране на контейнера */
-    padding: 0 15px; /* Padding за по-малки екрани */
-}
-/* Основен CSS за десктоп */
-.company-services__item {
-    width: calc(50% - 10px);
-    background: rgba(211, 211, 211, 0.9);
-    padding: 20px;
-    border-radius: 10px;
-    text-align: center;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
- /* Стилове за мобилна
-        @media (max-width: 768px) {
-        .company-services__item {
-            text-align: left; /* Подравняване на текста вляво */
-            padding-left: 20px; /* Отстояние отляво */
-        }
-
-        .banner__title {
-            text-align: left; /* Подравняване на заглавието вляво */
-            padding-left: 20px; /* Отстояние отляво */
-        }
-    }
     </style>
 </head>
 
@@ -214,14 +144,11 @@
 
     <section class="banner" id="banner">
         <header class="header">
-             <div class="header__left">
-        <a href="#" class="header__logo">
-            <img src="img/logo.png" alt="Desktop Logo">
-        </a>
-        <a href="#" class="header__logo-mobile">
-            <img src="img/logom.png" alt="Mobile Logo">
-        </a>
-    </div>
+            <div class="header__left">
+                <a href="#" class="header__logo">
+                    <img src="img/logo.png">
+                </a>
+            </div>
         </header>
         <div class="banner__container">
             <div class="banner__wrapper">
@@ -244,7 +171,7 @@
     <section class="pricing" id="pricing">
         <div class="pricing__container">
             <h2 class="title title--pricing">Цени</h2>
-            <h3 class="subtitle subtitle--pricing"></h3>
+            <h3 class="subtitle subtitle--pricing">Специални есенни промоции</h3>
             <div class="pricing__container-wrap">
                 <div class="pricing__row">
                     <div class="pricing__column">
@@ -255,7 +182,7 @@
                             <ul class="unordered-list unordered-list--pricing">
                                 <li class="unordered-list__item unordered-list__item--pricing">2 масажа - <strong>90 лв.</strong></li>
                                 <li class="unordered-list__item unordered-list__item--pricing">3 масажа - <strong>130 лв.</strong></li>
-                                <li class="unordered-list__item unordered-list__item--pricing">5 масажа - <strong>210 лв.</strong></li>
+                                <li class="unordered-list__item unordered-list__item--pricing">5 масажа - <strong>220 лв.</strong></li>
                             </ul>
                         </div>
                     </div>
@@ -267,7 +194,7 @@
                             <ul class="unordered-list unordered-list--pricing">
                                 <li class="unordered-list__item unordered-list__item--pricing">2 масажа - <strong>90 лв.</strong></li>
                                 <li class="unordered-list__item unordered-list__item--pricing">3 масажа - <strong>130 лв.</strong></li>
-                                <li class="unordered-list__item unordered-list__item--pricing">5 масажа - <strong>210 лв.</strong></li>
+                                <li class="unordered-list__item unordered-list__item--pricing">5 масажа - <strong>220 лв.</strong></li>
                             </ul>
                         </div>
                     </div>
@@ -279,7 +206,7 @@
                             <ul class="unordered-list unordered-list--pricing">
                                 <li class="unordered-list__item unordered-list__item--pricing">2 масажа - <strong>90 лв.</strong></li>
                                 <li class="unordered-list__item unordered-list__item--pricing">3 масажа - <strong>130 лв.</strong></li>
-                                <li class="unordered-list__item unordered-list__item--pricing">5 масажа - <strong>210 лв.</strong></li>
+                                <li class="unordered-list__item unordered-list__item--pricing">5 масажа - <strong>220 лв.</strong></li>
                             </ul>
                         </div>
                     </div>
@@ -295,31 +222,31 @@
                             <ul class="unordered-list unordered-list--pricing">
                                 <li class="unordered-list__item unordered-list__item--pricing">2 масажа - <strong>90 лв.</strong></li>
                                 <li class="unordered-list__item unordered-list__item--pricing">3 масажа - <strong>130 лв.</strong></li>
-                                <li class="unordered-list__item unordered-list__item--pricing">5 масажа - <strong>210 лв.</strong></li>
+                                <li class="unordered-list__item unordered-list__item--pricing">5 масажа - <strong>220 лв.</strong></li>
                             </ul>
                         </div>
                     </div>
                     <div class="pricing__column">
                         <div class="pricing__content">
-                            <h3 class="pricing__title">Антицелулитен <br>40 мин.</h3>
+                            <h3 class="pricing__title">Антицелулитен <br>60 мин.</h3>
                             <li class="unordered-list__item unordered-list__item--pricing">1 масаж - <strong>35 лв.</strong></li>
                             <h4 class="pricing__subscription-title">Цена за пакет:</h4>
                             <ul class="unordered-list unordered-list--pricing">
-                                <li class="unordered-list__item unordered-list__item--pricing">2 масажа - <strong>65 лв.</strong></li>
-                                <li class="unordered-list__item unordered-list__item--pricing">3 масажа - <strong>95 лв.</strong></li>
-                                <li class="unordered-list__item unordered-list__item--pricing">5 масажа - <strong>160 лв.</strong></li>
+                                <li class="unordered-list__item unordered-list__item--pricing">2 масажа - <strong>90 лв.</strong></li>
+                                <li class="unordered-list__item unordered-list__item--pricing">3 масажа - <strong>130 лв.</strong></li>
+                                <li class="unordered-list__item unordered-list__item--pricing">5 масажа - <strong>220 лв.</strong></li>
                             </ul>
                         </div>
                     </div>
                     <div class="pricing__column">
                         <div class="pricing__content">
-                            <h3 class="pricing__title">Частичен <br>30 мин.</h3>
+                            <h3 class="pricing__title">Частичен <br>60 мин.</h3>
                             <li class="unordered-list__item unordered-list__item--pricing">1 масаж - <strong>30 лв.</strong></li>
                             <h4 class="pricing__subscription-title">Цена за пакет:</h4>
                             <ul class="unordered-list unordered-list--pricing">
-                                <li class="unordered-list__item unordered-list__item--pricing">2 масажа - <strong>55 лв.</strong></li>
-                                <li class="unordered-list__item unordered-list__item--pricing">3 масажа - <strong>80 лв.</strong></li>
-                                <li class="unordered-list__item unordered-list__item--pricing">5 масажа - <strong>135 лв.</strong></li>
+                                <li class="unordered-list__item unordered-list__item--pricing">2 масажа - <strong>90 лв.</strong></li>
+                                <li class="unordered-list__item unordered-list__item--pricing">3 масажа - <strong>130 лв.</strong></li>
+                                <li class="unordered-list__item unordered-list__item--pricing">5 масажа - <strong>220 лв.</strong></li>
                             </ul>
                         </div>
                     </div>
@@ -359,16 +286,16 @@
             <div class="row">
                 <div class="col-md-6">
                     <h2 class="contact__title">Адрес</h2>
-                    <p>гр. Пловдив, тъпговски център Гранд Пловдив, етаж 1</p>
+                    <p>гр. Пловдив, сграда Гранд Пловдив, етаж 3</p>
                 </div>
                 <div class="col-md-6">
-                    <h2 class="contact__title"></h2>
-                    <p>0879973347 - Емил Бойчев ( масажист )</p>
+                    <h2 class="contact__title">Обадете се</h2>
+                    <p>0879973347</p>
                 </div>
             </div>
         </div>
         <div class="text-center mt-3">
-            <p>© 2024 Масажни услуги. Всички права са запазени.</p>
+            <p>© 2024 Масажни услуги. Всички права запазени.</p>
         </div>
     </footer>
     
