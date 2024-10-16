@@ -151,26 +151,18 @@
     text-align: center;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
+ /* Стилове за мобилна версия */
+    @media (max-width: 768px) {
+        .company-services__item {
+            text-align: left; /* Подравняване на текста вляво */
+            padding-left: 20px; /* Отстояние отляво */
+        }
 
-/* Стилове за мобилна версия */
-@media (max-width: 768px) {
-    .company-services {
-        flex-direction: column; /* Подреждане на елементите в колона */
+        .banner__title {
+            text-align: left; /* Подравняване на заглавието вляво */
+            padding-left: 20px; /* Отстояние отляво */
+        }
     }
-
-    .company-services__item {
-        width: 100%; /* Всеки елемент заема 100% от ширината */
-        text-align: center; /* Подравняване на текста вляво */
-        padding-left: 60px; /* Добавяне на отстояние отляво */
-    }
-
-    .banner__title {
-        text-align: center; /* Подравняване на заглавието вляво */
-        padding-left: 60px; /* Добавяне на отстояние отляво за заглавието */
-    }
-}
-
-
     </style>
 </head>
 
