@@ -15,13 +15,15 @@
   @media (max-width: 576px) {
     .header__logo {
         display: flex;
-        justify-content: center; /* Центриране на логото хоризонтално */
-        margin: 0 auto; /* Премахване на отстоянията и центриране */
+        justify-content: center; /* Центриране на логото */
+        align-items: center; /* Вертикално центриране, ако е необходимо */
+        margin: 0 auto; /* Центриране на блока */
+        text-align: center; /* Центриране на текста, ако е приложимо */
     }
-    
+
     .header__logo img {
         content: url('img/mobile-logo.png'); /* Изображение за мобилната версия */
-        width: 60px; /* Още по-малко лого на мобилни устройства */
+        width: 50px; /* Намаляване на логото за мобилни устройства */
         height: auto; /* Запазване на пропорциите */
     }
 }
